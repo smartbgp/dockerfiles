@@ -6,10 +6,10 @@ RUN apt-get update
 
 RUN apt-get install -y --no-install-recommends python-dev python-pip wget build-essential unzip
 
-RUN wget https://github.com/smartbgp/yabgp/archive/master.zip
+RUN wget https://github.com/smartbgp/yabgp/archive/docker.zip
 
-RUN unzip master.zip &&  \
-    cd yabgp-master  && \
+RUN unzip docker.zip &&  \
+    cd yabgp-docker  && \
     pip install -r requirements.txt && \
     python setup.py install
 
