@@ -1,6 +1,6 @@
 FROM python:2.7
 
-MAINTAINER Peng Xiao <xiaoquwl@gmail.com>
+LABEL maintainer="Peng Xiao <xiaoquwl@gmail.com>"
 
 RUN apt-get update
 
